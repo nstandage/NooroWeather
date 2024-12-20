@@ -10,10 +10,20 @@ import Foundation
 
 enum WeatherNetworkError: Error {
 	case dataNotFound
+	case badApiKey
 }
 
 class WeatherNetworkService {
-	private let apiKey = "7341f3b970d549f493d00935241812"
+	private lazy var apiKey: String = {
+		guard let url = Bundle.main.url(forResource: "Config", withExtension: "plist"),
+			  let data = try? Data(contentsOf: url),
+			  let plist = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any],
+			  let value = plist["apiKey"] as? String else {
+			reciever?.send(.failure(.badApiKey))
+			return ""
+		}
+			return value
+	}() //"7341f3b970d549f493d00935241812"
 	private let baseURL = "https://api.weatherapi.com/v1"
 	private let currentWeatherMethod = "/current.json"
 	private let errorRange = 400..<500

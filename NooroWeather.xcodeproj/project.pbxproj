@@ -24,6 +24,8 @@
 		D8A647EB2D14CA11007147D3 /* NoCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A647DE2D14CA11007147D3 /* NoCityView.swift */; };
 		D8A647EC2D14CA11007147D3 /* NoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A647DF2D14CA11007147D3 /* NoResultsView.swift */; };
 		D8A647EE2D14CA11007147D3 /* WeatherNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A647E22D14CA11007147D3 /* WeatherNetworkService.swift */; };
+		D8DC891D2D154278000FDFEA /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8DC891C2D154278000FDFEA /* Config.plist */; };
+		D8DC891F2D154439000FDFEA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8DC891E2D154439000FDFEA /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		D8A647DE2D14CA11007147D3 /* NoCityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCityView.swift; sourceTree = "<group>"; };
 		D8A647DF2D14CA11007147D3 /* NoResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoResultsView.swift; sourceTree = "<group>"; };
 		D8A647E22D14CA11007147D3 /* WeatherNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherNetworkService.swift; sourceTree = "<group>"; };
+		D8DC891C2D154278000FDFEA /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		D8DC891E2D154439000FDFEA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				D8A647D92D14CA11007147D3 /* Models & ViewModels */,
 				D8A647CA2D14C9F3007147D3 /* Assets.xcassets */,
 				D8A647CC2D14C9F3007147D3 /* Preview Content */,
+				D8DC891C2D154278000FDFEA /* Config.plist */,
 			);
 			path = NooroWeather;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A647E22D14CA11007147D3 /* WeatherNetworkService.swift */,
+				D8DC891E2D154439000FDFEA /* .gitignore */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -204,7 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DC891F2D154439000FDFEA /* .gitignore in Resources */,
 				D8A647CE2D14C9F3007147D3 /* Preview Assets.xcassets in Resources */,
+				D8DC891D2D154278000FDFEA /* Config.plist in Resources */,
 				D8A647CB2D14C9F3007147D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
